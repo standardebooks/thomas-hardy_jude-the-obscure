@@ -1,0 +1,205 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+/*----------
+ * Epigraphs.
+ */
+/* All epigraphs */
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+}
+
+[epub|type~="epigraph"] cite{
+	margin-top: 1em;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+[epub|type~="epigraph"] cite span{
+	font-variant: normal;
+}
+/* End all epigraphs */
+
+/* Full-page epigraphs */
+section[epub|type~="epigraph"]{
+	text-align: center;
+}
+
+section[epub|type~="epigraph"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+	text-align: left;
+}
+
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="epigraph"] > *{
+		margin: 0;
+	}
+
+	section[epub|type~="epigraph"] > * + *{
+		margin-top: 3em;
+	}
+}
+/* End full-page epigraphs */
+
+section[epub|type="part"] > section[epub|type="epigraph"]{
+	page-break-before: always;
+}
+
+/*----------
+ * Images.
+ */
+[epub|type~="chapter"] img {
+	display: block;
+	margin: 1em auto;
+	width: 35%;
+}
+
+/*----------
+ * Letters.
+ */
+[epub|type~="z3998:letter"] header{
+	margin-bottom: .5em;
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] footer{
+	margin-top: .5em;
+}
+
+[epub|type~="z3998:recipient"],
+[epub|type~="z3998:salutation"],
+[epub|type~="z3998:sender"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:salutation"] i{
+	font-style: normal;
+	font-variant: normal;
+}
+
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:letter"] span[epub|type="z3998:signature"]{
+	display: block;
+	text-align: right;
+}
+
+/*----------
+ * Poetry.
+ */
+[epub|type~="z3998:poem"] p{
+	text-align: left;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:poem"] + p{
+	text-indent: 0;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+
+q[epub|type~="z3998:poem"]{
+	display: block;
+	margin: 1em 40px;
+}
+
+q[epub|type~="z3998:poem"] > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+q[epub|type~="z3998:poem"] > span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+q[epub|type~="z3998:poem"] > span + br{
+	display: none;
+}
+
+
+/*----------
+ * Subtitles.
+ */
+span[epub|type~="subtitle"]{
+	display: block;
+	font-weight: normal;
+}
+
+/*----------
+ * Chapter-specific.
+ */
+/* Preface: Date/Signature line. */
+#preface footer{
+	margin-top: 1em;
+	text-align: right;
+}
+/* Preface: Postcript header. */
+#preface-postscript header{
+	font-variant: small-caps;
+	font-weight: bold;
+	hyphens: none;
+	-epub-hyphens: none;
+	margin: 3em 0;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+/*
+ * Chapter 1-5, 1-7: Short Latin/Greek phrase.
+ */
+#chapter-1-5 > p:nth-of-type(9) > q,
+#chapter-1-7 > p:nth-of-type(4) > q,
+#chapter-1-7 > p:nth-of-type(52)> q{
+	display: block;
+	margin: 1em 0;
+	text-align: center;
+	text-indent: 0;
+	white-space: nowrap;
+}
+
+/* Chapter 5-3: "Cartlett--Donn" marriage announcement. */
+#chapter-5-3 > p:nth-of-type(20) span{
+	font-variant: small-caps;
+}
