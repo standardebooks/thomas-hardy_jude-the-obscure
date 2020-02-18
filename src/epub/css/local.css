@@ -175,7 +175,7 @@ span[epub|type~="subtitle"]{
 	text-align: right;
 }
 /* Preface: Postcript header. */
-#preface-postscript header{
+#preface-postscript header p{
 	font-variant: small-caps;
 	font-weight: bold;
 	hyphens: none;
@@ -186,9 +186,7 @@ span[epub|type~="subtitle"]{
 	text-align: center;
 }
 
-/*
- * Chapter 1-5, 1-7: Short Latin/Greek phrase.
- */
+/* Chapter 1-5, 1-7: Short Latin/Greek phrase. */
 #chapter-1-5 > p:nth-of-type(9) > q,
 #chapter-1-7 > p:nth-of-type(4) > q,
 #chapter-1-7 > p:nth-of-type(52)> q{
