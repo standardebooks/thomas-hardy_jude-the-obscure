@@ -71,28 +71,25 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
 /*----------
  * Letters.
  */
-[epub|type~="z3998:letter"] header{
+[epub|type~="z3998:letter"] > header{
+	font-variant: small-caps;
 	margin-bottom: .5em;
 	text-align: right;
 }
 
-[epub|type~="z3998:letter"] footer{
+[epub|type~="z3998:letter"] > footer{
 	margin-top: .5em;
 }
 
 [epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
-[epub|type~="z3998:sender"]{
+[epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 
 [epub|type~="z3998:salutation"] i{
 	font-style: normal;
 	font-variant: normal;
-}
-
-[epub|type~="z3998:signature"]{
-	font-variant: small-caps;
 }
 
 [epub|type~="z3998:letter"] span[epub|type="z3998:signature"]{
@@ -124,17 +121,17 @@ p span.i2{
 	text-indent: -1em;
 }
 
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+
 [epub|type~="z3998:poem"] p > span + br{
 	display: none;
 }
 
 [epub|type~="z3998:poem"] + p{
 	text-indent: 0;
-}
-
-span.elision{
-	margin: .5em;
-	margin-left: 3em;
 }
 
 q[epub|type~="z3998:poem"]{
@@ -156,7 +153,6 @@ q[epub|type~="z3998:poem"] > span.i2{
 q[epub|type~="z3998:poem"] > span + br{
 	display: none;
 }
-
 
 /*----------
  * Subtitles.
