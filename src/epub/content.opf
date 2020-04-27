@@ -54,10 +54,12 @@
 		<meta property="authority" refines="#subject-8">LCSH</meta>
 		<meta property="term" refines="#subject-8">sh2010117496</meta>
 		<meta property="se:subject">Fiction</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
-		<meta id="long-description" property="se:long-description" refines="#description"><![CDATA[
-			LONG_DESCRIPTION
-		]]></meta>
+		<dc:description id="description">A promising young man’s life is marred by failure, tragedy, and loss.</dc:description>
+		<meta id="long-description" property="se:long-description" refines="#description">
+			&lt;p&gt;&lt;i&gt;Jude the Obscure&lt;/i&gt; was first published in its complete form in 1895, just after finishing its serial run in &lt;i&gt;Harper’s Magazine&lt;/i&gt;. At the time, its unconventional and somewhat scandalous themes earned it widespread criticism and condemnation. In the 1912 “Wessex Edition,” Hardy appended a postscript to the book’s preface in which he stated that the outrage ultimately abated with no lingering effect other than “completely curing me of further interest in novel-writing.” Indeed, &lt;i&gt;Jude&lt;/i&gt; was to be Hardy’s last novel.&lt;/p&gt;
+			&lt;p&gt;The story chronicles the life of Jude Fawley, an orphan boy of unremarkable birth or means, growing up in the small farming village of Marygreen in Hardy’s fictional version of Wessex, England. From an early age, Jude determines to chart the course of his life by the stars of learning and scholarship, but he very quickly discovers just how little interest the society of his time would take in the grand ambitions of a young man of so humble an origin. Without proper guidance and limited resources, his progress is slow and arduous. And when he discovers the existence of his cousin, the charming Sue Bridehead, it is nearly abandoned altogether in favor of an almost obsessive pursuit.&lt;/p&gt;
+			&lt;p&gt;The novel proceeds to trace the lives of Jude and Sue as they become locked in a struggle both against themselves and the conventions of their times. Lofty ideals clash with harsh realities; grand pursuits fall prey to darker aspects of human nature. Characters are complex: at times spiteful, selfish, or self-destructive. Hardy, however, remains very subtle in his portrayal of these tragic figures and their flaws. The effect is to render them convincingly human. Ultimately, &lt;i&gt;Jude&lt;/i&gt; is an unhappy tale of unfulfilled promise that is rarely told, and rarely told so well.&lt;/p&gt;
+		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/153</dc:source>
 		<dc:source>https://archive.org/details/hardyworks03harduoft</dc:source>
