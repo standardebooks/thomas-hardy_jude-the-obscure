@@ -1,6 +1,11 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
 /*----------
  * Epigraphs.
  */
@@ -62,9 +67,22 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
 /*----------
  * Images.
  */
-[epub|type~="chapter"] img{
-	display: block;
+figure{
 	margin: 1em auto;
+	text-align: center;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figure + p{
+	text-indent: 0;
+}
+
+figure img{
 	width: 35%;
 }
 
@@ -73,12 +91,8 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
  */
 [epub|type~="z3998:letter"] > header{
 	font-variant: small-caps;
-	margin-bottom: .5em;
+	margin-bottom: 1em;
 	text-align: right;
-}
-
-[epub|type~="z3998:letter"] > footer{
-	margin-top: .5em;
 }
 
 [epub|type~="z3998:recipient"],
@@ -100,11 +114,13 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
 /*----------
  * Poetry.
  */
+[epub|type~="z3998:hymn"] p,
 [epub|type~="z3998:poem"] p{
 	text-align: left;
 	text-indent: 0;
 }
 
+[epub|type~="z3998:hymn"] p > span,
 [epub|type~="z3998:poem"] p > span{
 	display: block;
 	padding-left: 1em;
@@ -130,28 +146,9 @@ span.elision{
 	display: none;
 }
 
+[epub|type~="z3998:hymn"] + p,
 [epub|type~="z3998:poem"] + p{
 	text-indent: 0;
-}
-
-q[epub|type~="z3998:poem"]{
-	display: block;
-	margin: 1em 40px;
-}
-
-q[epub|type~="z3998:poem"] > span{
-	display: block;
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-q[epub|type~="z3998:poem"] > span.i2{
-	padding-left: 3em;
-	text-indent: -1em;
-}
-
-q[epub|type~="z3998:poem"] > span + br{
-	display: none;
 }
 
 /*----------
@@ -165,11 +162,6 @@ span[epub|type~="subtitle"]{
 /*----------
  * Chapter-specific.
  */
-/* Preface: Date/Signature line. */
-#preface footer{
-	margin-top: 1em;
-	text-align: right;
-}
 /* Preface: Postcript header. */
 #preface-postscript header p{
 	font-variant: small-caps;
@@ -182,15 +174,9 @@ span[epub|type~="subtitle"]{
 	text-align: center;
 }
 
-/* Chapter 1-5, 1-7: Short Latin/Greek phrase. */
-#chapter-1-5 > p:nth-of-type(9) > q,
-#chapter-1-7 > p:nth-of-type(4) > q,
-#chapter-1-7 > p:nth-of-type(52)> q{
-	display: block;
-	margin: 1em 0;
-	text-align: center;
-	text-indent: 0;
-	white-space: nowrap;
+/* Chapter-2-6: Letter footer. */
+#chapter-2-6 footer{
+	text-align: left;
 }
 
 /* Chapter 5-3: "Cartlett--Donn" marriage announcement. */

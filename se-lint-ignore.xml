@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="local.css">
+		<ignore>
+			<code>c-009</code>
+			<reason>Use of duplicate CSS selector to extend/override base style is explicitly permitted.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>

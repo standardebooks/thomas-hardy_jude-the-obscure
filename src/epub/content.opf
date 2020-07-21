@@ -56,7 +56,7 @@
 		<meta property="se:subject">Fiction</meta>
 		<dc:description id="description">A promising young man’s life is marred by failure, tragedy, and loss.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;&lt;i&gt;Jude the Obscure&lt;/i&gt; was first published in its complete form in 1895, just after finishing its serial run in &lt;i&gt;Harper’s Magazine&lt;/i&gt;. At the time, its unconventional and somewhat scandalous themes earned it widespread criticism and condemnation. In the 1912 “Wessex Edition,” Hardy appended a postscript to the book’s preface in which he stated that the outrage ultimately abated with no lingering effect other than “completely curing me of further interest in novel-writing.” Indeed, &lt;i&gt;Jude&lt;/i&gt; was to be Hardy’s last novel.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Jude the Obscure&lt;/i&gt; was first published in its complete form in 1895, just after finishing its serial run in &lt;i&gt;Harper’s Magazine&lt;/i&gt;. At the time, its unconventional and somewhat scandalous themes earned it widespread criticism and condemnation. In the 1912 “Wessex Edition,” &lt;a href="https://standardebooks.org/ebooks/thomas-hardy"&gt;Hardy&lt;/a&gt; appended a postscript to the book’s preface in which he stated that the outrage ultimately abated with no lingering effect other than “completely curing me of further interest in novel-writing.” Indeed, &lt;i&gt;Jude&lt;/i&gt; was to be Hardy’s last novel.&lt;/p&gt;
 			&lt;p&gt;The story chronicles the life of Jude Fawley, an orphan boy of unremarkable birth or means, growing up in the small farming village of Marygreen in Hardy’s fictional version of Wessex, England. From an early age, Jude determines to chart the course of his life by the stars of learning and scholarship, but he very quickly discovers just how little interest the society of his time would take in the grand ambitions of a young man of so humble an origin. Without proper guidance and limited resources, his progress is slow and arduous. And when he discovers the existence of his cousin, the charming Sue Bridehead, it is nearly abandoned altogether in favor of an almost obsessive pursuit.&lt;/p&gt;
 			&lt;p&gt;The novel proceeds to trace the lives of Jude and Sue as they become locked in a struggle both against themselves and the conventions of their times. Lofty ideals clash with harsh realities; grand pursuits fall prey to darker aspects of human nature. Characters are complex: at times spiteful, selfish, or self-destructive. Hardy, however, remains very subtle in his portrayal of these tragic figures and their flaws. The effect is to render them convincingly human. Ultimately, &lt;i&gt;Jude&lt;/i&gt; is an unhappy tale of unfulfilled promise that is rarely told, and rarely told so well.&lt;/p&gt;
 		</meta>
@@ -73,6 +73,7 @@
 		<meta property="se:url.authority.nacoaf" refines="#author">https://id.loc.gov/authorities/names/n79046230</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ill</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
 		<dc:contributor id="artist">Joseph Mallord William Turner</dc:contributor>
 		<meta property="file-as" refines="#artist">Turner, Joseph Mallord William</meta>
@@ -160,6 +161,7 @@
 		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/halftitle.xhtml" id="halftitle.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/loi.xhtml" id="loi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-2.xhtml" id="part-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-3.xhtml" id="part-3.xhtml" media-type="application/xhtml+xml"/>
@@ -234,6 +236,7 @@
 		<itemref idref="chapter-6-9.xhtml"/>
 		<itemref idref="chapter-6-10.xhtml"/>
 		<itemref idref="chapter-6-11.xhtml"/>
+		<itemref idref="loi.xhtml"/>
 		<itemref idref="endnotes.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
