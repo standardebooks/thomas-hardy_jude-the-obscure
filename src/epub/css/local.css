@@ -168,8 +168,3 @@ span[epub|type~="subtitle"]{
 #chapter-2-6 footer{
 	text-align: left;
 }
-
-/* Chapter 5-3: "Cartlett--Donn" marriage announcement. */
-#chapter-5-3 > p:nth-of-type(20) span{
-	font-variant: small-caps;
-}
