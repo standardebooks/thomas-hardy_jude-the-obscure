@@ -19,10 +19,6 @@ footer{
 	font-style: normal;
 	font-variant: small-caps;
 }
-
-[epub|type~="epigraph"] cite span{
-	font-variant: normal;
-}
 /* End all epigraphs */
 
 /* Full-page epigraphs */
