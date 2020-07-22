@@ -6,9 +6,8 @@ footer{
 	text-align: right;
 }
 
-/*----------
- * Epigraphs.
- */
+/* ----------
+ * Epigraphs. */
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -64,9 +63,8 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
 	page-break-before: always;
 }
 
-/*----------
- * Images.
- */
+/* ----------
+ * Images. */
 figure{
 	margin: 1em auto;
 	text-align: center;
@@ -86,9 +84,8 @@ figure img{
 	width: 35%;
 }
 
-/*----------
- * Letters.
- */
+/* ----------
+ * Letters. */
 [epub|type~="z3998:letter"] > header{
 	font-variant: small-caps;
 	margin-bottom: 1em;
@@ -111,9 +108,8 @@ figure img{
 	text-align: right;
 }
 
-/*----------
- * Poetry.
- */
+/* ----------
+ * Poetry. */
 [epub|type~="z3998:hymn"] p,
 [epub|type~="z3998:poem"] p{
 	text-align: left;
@@ -151,17 +147,15 @@ span.elision{
 	text-indent: 0;
 }
 
-/*----------
- * Subtitles.
- */
+/* ----------
+ * Subtitles. */
 span[epub|type~="subtitle"]{
 	display: block;
 	font-weight: normal;
 }
 
-/*----------
- * Chapter-specific.
- */
+/* ----------
+ * Chapter-specific. */
 /* Preface: Postcript header. */
 #preface-postscript header p{
 	font-variant: small-caps;
