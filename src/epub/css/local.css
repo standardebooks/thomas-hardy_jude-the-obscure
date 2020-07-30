@@ -12,6 +12,7 @@ footer{
 [epub|type~="epigraph"]{
 	font-style: italic;
 	hyphens: none;
+	-epub-hyphens: none;
 }
 
 [epub|type~="epigraph"] cite{
@@ -56,7 +57,7 @@ section[epub|type~="epigraph"] > *{
 /* End full-page epigraphs */
 
 section[epub|type="part"] > section[epub|type="epigraph"]{
-	page-break-before: always;
+	break-before: page;
 }
 
 /* ----------
@@ -156,11 +157,7 @@ span[epub|type~="subtitle"]{
 #preface-postscript header p{
 	font-variant: small-caps;
 	font-weight: bold;
-	hyphens: none;
-	-epub-hyphens: none;
 	margin: 3em 0;
-	page-break-after: avoid;
-	page-break-inside: avoid;
 	text-align: center;
 }
 
