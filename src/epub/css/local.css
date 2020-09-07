@@ -145,13 +145,6 @@ span.elision{
 }
 
 /* ----------
- * Subtitles. */
-span[epub|type~="subtitle"]{
-	display: block;
-	font-weight: normal;
-}
-
-/* ----------
  * Chapter-specific. */
 /* Preface: Postcript header. */
 #preface-postscript header p{
