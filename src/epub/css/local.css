@@ -91,7 +91,7 @@ figure img{
 
 [epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
-.signature{
+[epub:type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 
@@ -100,7 +100,7 @@ figure img{
 	font-variant: normal;
 }
 
-[epub|type~="z3998:letter"] span.signature{
+[epub|type~="z3998:letter"] span[epub:type~="z3998:signature"]{
 	display: block;
 	text-align: right;
 }
