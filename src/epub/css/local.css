@@ -139,11 +139,6 @@ span.elision{
 	display: none;
 }
 
-[epub|type~="z3998:hymn"] + p,
-[epub|type~="z3998:poem"] + p{
-	text-indent: 0;
-}
-
 /* ----------
  * Chapter-specific. */
 /* Preface: Postcript header. */
