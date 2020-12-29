@@ -7,7 +7,7 @@ footer{
 }
 
 #chapter-2-6 footer p + p{
-	text-align: left;
+	text-align: initial;
 }
 
 /* ----------
@@ -36,7 +36,7 @@ section[epub|type~="epigraph"] > *{
 	margin: auto;
 	margin-top: 3em;
 	max-width: 80%;
-	text-align: left;
+	text-align: initial;
 }
 
 @supports(display: flex){
@@ -113,7 +113,7 @@ figure img{
  * Poetry. */
 [epub|type~="z3998:hymn"] p,
 [epub|type~="z3998:poem"] p{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 }
 
