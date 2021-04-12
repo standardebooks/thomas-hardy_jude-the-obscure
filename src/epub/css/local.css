@@ -67,6 +67,7 @@ section[epub|type="part"] > section[epub|type="epigraph"]{
 /* ----------
  * Images. */
 figure{
+	break-inside: avoid;
 	margin: 1em auto;
 	text-align: center;
 }
