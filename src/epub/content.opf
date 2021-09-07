@@ -82,8 +82,9 @@
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<meta property="se:role" refines="#author" scheme="marc:relators">ill</meta>
 		<meta property="se:role" refines="#author" scheme="marc:relators">wpr</meta>
-		<dc:contributor id="artist">Joseph Mallord William Turner</dc:contributor>
-		<meta property="file-as" refines="#artist">Turner, Joseph Mallord William</meta>
+		<dc:contributor id="artist">J. M. W. Turner</dc:contributor>
+		<meta property="file-as" refines="#artist">Turner, J. M. W.</meta>
+		<meta property="se:name.person.full-name" refines="#artist">Joseph Mallord William Turner</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/J._M._W._Turner</meta>
 		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n79060712</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
