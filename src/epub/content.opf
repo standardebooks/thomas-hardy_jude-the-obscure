@@ -70,7 +70,7 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/153</dc:source>
 		<dc:source>https://archive.org/details/hardyworks03harduoft</dc:source>
-		<meta property="se:word-count">149405</meta>
+		<meta property="se:word-count">149404</meta>
 		<meta property="se:reading-ease.flesch">71.55</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Jude_the_Obscure</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/thomas-hardy_jude-the-obscure</meta>
