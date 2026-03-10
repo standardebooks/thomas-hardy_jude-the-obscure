@@ -2,6 +2,8 @@
 <se-lint-ignore>
 	<file path="local.css">
 		<ignore code="c-009">
+			<line>68</line>
+			<line>75</line>
 			<reason>Use of duplicate CSS selector to extend/override base style is explicitly permitted.</reason>
 		</ignore>
 	</file>
